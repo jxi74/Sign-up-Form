@@ -22,42 +22,49 @@
 
             <div class="sign-up-content">
                 <h2>Let's do this!</h2>
-                <form action="" method="post">
+                <form action="#" method="put">
                     <div class="sign-up-sides">
                         <div class="sign-up-left-side">
-                            <div>
+                            <div class="space-input">
                                 <div><label for="first_name">FIRST NAME</label></div>
-                                <input type="text" id="first_name" name="first_name">
+                                <input type="text" id="first_name" name="first_name" required>
+                                <span></span>
                             </div>
-                            <div>
+                            <div class="space-input">
                                 <div><label for="email">EMAIL</label></div>
-                                <input type="email" id="email" name="email">
+                                <input type="email" id="email" name="email" placeholder="you@email.com" pattern="^[a-zA-Z0-9_.±]+@[a-zA-Z0-9-]+.[a-zA-Z0-9-.]+$" required>
+                                <span></span>
                             </div>
                             <div>
                                 <div><label for="password_init">PASSWORD</label></div>
-                                <input type="password" id="password_init" name="password_init">
+                                <input type="password" id="password_init" name="password_init" required>
+                                <span></span>
+                                <div></div>
                             </div>
                         </div>
     
                         <div class="sign-up-right-side">
-                            <div>
+                            <div class="space-input">
                                 <div><label for="last_name">LAST NAME</label></div>
-                                <input type="text" id="last_name" name="last_name">
+                                <input type="text" id="last_name" name="last_name" required>
+                                <span></span>
                             </div>
-                            <div>
+                            <div class="space-input">
                                 <div><label for="phone">PHONE NUMBER</label></div>
-                                <input type="tel" id="phone" name="phone">
+                                <input type="tel" id="phone" name="phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+                                <span></span>
                             </div>
                             <div>
                                 <div><label for="password_confirm">CONFIRM PASSWORD</label></div>
-                                <input type="password" id="password_confirm" name="password_confirm">
+                                <input type="password" id="password_confirm" name="password_confirm" required>
+                                <span></span>
                             </div>
                         </div>
                     </div>
 
                     <div class="footer">
-                        <div class="createAccount"><a type="button">Create Account</a></div>
-                        <div>Already have an account? <a href="">Log in</a></div>
+                        <button type="submit">Create Account</button>
+                        <div>Already have an account? <a href="#">Log in</a></div>
                     </div>
                 </form>
             </div>
@@ -65,4 +72,5 @@
         </div>
     </div>
 </body>
+<script src="sign-up-form.js"></script>
 </html>
